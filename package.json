@@ -1,0 +1,17 @@
+{
+  "name": "next_lambda",
+  "version": "1.0.0",
+  "description": "lambda deployement learing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "author": "Toney Sebastian",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^13.1.1",
+    "react": "^18.2.0"
+  }
+}
