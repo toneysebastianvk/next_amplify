@@ -1,10 +1,10 @@
 import axios from "axios";
 
-const Index = ({userData}) => {
+const Index = ({username}) => {
   return (
     <div>
       <h1>your sample next application</h1>
-      <h2>Welcome git lab user, {userData.name}</h2>
+      <h2>Welcome git lab user, {username}</h2>
     </div>
   );
 };
@@ -14,7 +14,7 @@ export async function getServerSideProps(context) {
   console.log("userDatauserDatauserData= ", userData.data);
   return {
     props: {
-      userData: userData.data,
+      username: userData.data.name,
     },
   };
 }
