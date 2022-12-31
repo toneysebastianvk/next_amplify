@@ -1,11 +1,11 @@
 import axios from "axios";
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   let response = {};
   if (req.method === "POST") {
     // Process a POST request
   } else {
-    const usersData = getUsers();
+    const usersData = await getUsers();
     response = usersData.data;
   }
   res.send(response);
